@@ -5,15 +5,19 @@ const startAlignnnet=Alignment.topLeft;
 const endAlignment=Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget{
-  const GradientContainer({super.key});
+  const GradientContainer(this.colorStart, this.colorEnd,{super.key});
+
+  final Color colorStart;
+  final Color colorEnd;
+
   @override
   Widget build(context){
     return Container(
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
             gradient: LinearGradient(
-              colors:  [
-                Color.fromARGB(255, 204, 161, 239),
-                Color.fromARGB(255, 150, 98, 205),
+              colors: [
+                colorStart,
+                colorEnd,
               ],
               begin:startAlignnnet,
               end:endAlignment ,
@@ -25,3 +29,25 @@ class GradientContainer extends StatelessWidget{
         );
   }
 } 
+
+
+// class GradientContainer extends StatelessWidget{
+//   const GradientContainer({super.key, required this.colors});
+// final List<Color> colors;
+  
+//   @override
+//   Widget build(context){
+//     return Container(
+//           decoration:  BoxDecoration(
+//             gradient: LinearGradient(
+//               colors: colors,
+//               begin:startAlignnnet,
+//               end:endAlignment ,
+//             ),
+//           ),
+//           child:  Center(
+//             child: StyledText('Expecto Patronum 🪄'),
+//           ),
+//         );
+//   }
+// }
