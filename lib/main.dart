@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientContainer(),
       ),
@@ -11,6 +11,7 @@ void main() {
 }
 
 class GradientContainer extends StatelessWidget{
+  const GradientContainer({super.key});
   @override
   Widget build(context){
     return Container(
@@ -35,4 +36,4 @@ class GradientContainer extends StatelessWidget{
           ),
         );
   }
-}
+} 
