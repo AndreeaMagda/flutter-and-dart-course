@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/styled_text.dart';
 
 
 class GradientContainer extends StatelessWidget{
@@ -17,13 +18,7 @@ class GradientContainer extends StatelessWidget{
             ),
           ),
           child: const Center(
-            child: Text(
-              'Expecto Patronum🪄',
-              style: TextStyle(
-                color: Color.fromARGB(255, 72, 5, 84),
-                fontSize: 35,
-              ),
-            ),
+            child: StyledText()
           ),
         );
   }
