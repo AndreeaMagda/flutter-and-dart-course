@@ -23,7 +23,7 @@ void startQuiz(){}
       const SizedBox(
         height: 20,
       ),
-      OutlinedButton(onPressed:startQuiz ,
+      OutlinedButton.icon(onPressed:startQuiz ,
       style: OutlinedButton.styleFrom(
         foregroundColor: Colors.white,
        // backgroundColor: Colors.blue,
@@ -31,7 +31,8 @@ void startQuiz(){}
         side: BorderSide.none,
 
       ),
-       child: const Text('Start Quiz'),)
+      icon: Icon(Icons.arrow_right_alt),
+       label: const Text('Start Quiz'),)
     ]);
   }
 }
