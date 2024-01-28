@@ -23,7 +23,15 @@ void startQuiz(){}
       const SizedBox(
         height: 20,
       ),
-      TextButton(onPressed:startQuiz , child: const Text('Start Quiz'))
+      OutlinedButton(onPressed:startQuiz ,
+      style: OutlinedButton.styleFrom(
+        foregroundColor: Colors.white,
+       // backgroundColor: Colors.blue,
+        shape: const StadiumBorder(),
+        side: BorderSide.none,
+
+      ),
+       child: const Text('Start Quiz'),)
     ]);
   }
 }
