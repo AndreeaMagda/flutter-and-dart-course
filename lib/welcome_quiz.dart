@@ -11,14 +11,16 @@ void startQuiz(){}
       Image.asset(
         'assets/images/quiz-logo.png',
         width: 200,
+        color: const Color.fromARGB(150, 255, 255, 255),
       ),
       const SizedBox(
-        height: 20,
+        height: 25,
       ),
    const   Text( 'Learn flutter the fun way',
           style: TextStyle(
             fontSize: 20,
-            fontWeight: FontWeight.bold,)
+            fontWeight: FontWeight.bold,
+            color: Colors.white),
       ),
       const SizedBox(
         height: 20,
@@ -31,7 +33,7 @@ void startQuiz(){}
         side: BorderSide.none,
 
       ),
-      icon: Icon(Icons.arrow_right_alt),
+      icon: const Icon(Icons.arrow_right_alt),
        label: const Text('Start Quiz'),)
     ]);
   }
